@@ -1,0 +1,18 @@
+ <h2 class = "heading">TAB 1</h2>
+   <span style = "margin-left:40px;">Filter:</span>
+   <select ng-model = "selectedName"><option ng-repeat = "x in names" value ={{x}} >{{x}}</option></select>
+   <p style = "margin-left:40px"><i><b>Selected Filter Dropdown item:</b>{{selectedName}}</i></p>
+   <div ng-switch = "selectedName">
+      <ul ng-switch-when = "Show All" class = "inside">
+       <li ng-repeat = "y in tasks">{{y}}</li>
+      </ul>
+      <ul ng-switch-when = "Text" class = "inside">
+         <li ng-repeat = "y in tasks | filter : 'text'">{{y}}</li>
+      </ul>
+      <ul ng-switch-when = "Videos" class = "inside">
+         <li ng-repeat = "y in tasks | filter : 'video'">{{y}}</li>
+      </ul>
+      <ul ng-switch-when = "Photos" class = "inside">
+         <li ng-repeat = "y in tasks | filter : 'photo'">{{y}}</li>
+      </ul>
+  </div>

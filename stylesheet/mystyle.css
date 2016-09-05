@@ -1,0 +1,19 @@
+.container{
+    margin:80px auto;
+    width:700px;
+    height:550px;
+    background-color:white;
+}
+nav {
+	background-color:#559897;
+}
+nav ul li a{
+	color:white;
+}
+.inside{
+	list-style-position:inside;
+}
+.heading{
+    color:#398080;
+    margin-left:40px;
+}

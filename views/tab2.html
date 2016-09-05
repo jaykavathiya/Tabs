@@ -1,0 +1,10 @@
+<h2 class = "heading">TAB 2</h2>
+<h4 style="margin-left:40px;"><strong>Click on the Thumbnails</strong></h4>
+<div class = "img_view">
+ <img ng-src = "{{clickImage}}" class = "img_view">
+</div>
+<div id = "img_collection">
+ <ul>
+  <li ng-repeat = "z in imageList"><img ng-src = "{{z.url}}" ng-click = "myFunction($index)" style = "height:80px;width:80px;margin-left:10px"></li>
+ </ul>
+</div>

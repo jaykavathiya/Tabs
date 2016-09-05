@@ -1,0 +1,17 @@
+.img_view{
+	height:250px;
+	width:250px;
+	margin-left:25px;
+}
+#img_collection{
+	height:80px;
+	margin-top:20px;
+	width:500px;
+}
+#img_collection ul li{
+	display:inline;
+	list-style-type:none;
+}
+input[type = 'text']{
+	margin-left:40px;
+}
